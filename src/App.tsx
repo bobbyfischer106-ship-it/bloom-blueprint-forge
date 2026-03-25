@@ -11,6 +11,7 @@ import Schedule from "./pages/Schedule";
 import Discover from "./pages/Discover";
 import Goals from "./pages/Goals";
 import Journal from "./pages/Journal";
+import Habits from "./pages/Habits";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/discover" element={<Discover />} />
             <Route path="/goals" element={<Goals />} />
             <Route path="/journal" element={<Journal />} />
+            <Route path="/habits" element={<Habits />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
