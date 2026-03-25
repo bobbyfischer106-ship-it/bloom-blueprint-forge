@@ -1,4 +1,4 @@
-import { LayoutDashboard, Heart, BookOpen, Calendar, Lightbulb, Trophy } from "lucide-react";
+import { LayoutDashboard, Heart, BookOpen, Calendar, Lightbulb, Trophy, Target } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
@@ -17,6 +17,7 @@ const items = [
   { title: "Health", url: "/health", icon: Heart },
   { title: "Studies", url: "/studies", icon: BookOpen },
   { title: "Schedule", url: "/schedule", icon: Calendar },
+  { title: "Goals", url: "/goals", icon: Target },
   { title: "Discover", url: "/discover", icon: Lightbulb },
 ];
 

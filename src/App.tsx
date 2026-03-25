@@ -9,6 +9,7 @@ import Health from "./pages/Health";
 import Studies from "./pages/Studies";
 import Schedule from "./pages/Schedule";
 import Discover from "./pages/Discover";
+import Goals from "./pages/Goals";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/studies" element={<Studies />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/discover" element={<Discover />} />
+            <Route path="/goals" element={<Goals />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
