@@ -181,6 +181,26 @@ export default function Auth() {
               {isLogin ? "Sign up" : "Sign in"}
             </button>
           </p>
+
+          <div className="flex items-center gap-3">
+            <div className="h-px flex-1 bg-border" />
+            <span className="text-xs text-muted-foreground uppercase tracking-wider">or</span>
+            <div className="h-px flex-1 bg-border" />
+          </div>
+
+          <button
+            onClick={() => {
+              localStorage.setItem("guest_mode", "true");
+              navigate("/");
+            }}
+            className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-dashed border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors font-medium"
+          >
+            <User className="h-4 w-4" />
+            Continue as Guest
+          </button>
+          <p className="text-center text-xs text-muted-foreground">
+            Guest data won't be saved across sessions
+          </p>
         </div>
       </motion.div>
     </div>

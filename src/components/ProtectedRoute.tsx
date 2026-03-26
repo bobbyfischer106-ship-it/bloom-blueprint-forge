@@ -12,7 +12,9 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
     );
   }
 
-  if (!user) {
+  const isGuest = localStorage.getItem("guest_mode") === "true";
+
+  if (!user && !isGuest) {
     return <Navigate to="/auth" replace />;
   }
 
