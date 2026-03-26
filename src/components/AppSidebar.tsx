@@ -62,6 +62,15 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        <div className="px-4 mt-auto pb-6">
+          <button
+            onClick={async () => { await signOut(); navigate("/auth"); }}
+            className="flex items-center gap-2 w-full px-3 py-2 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors text-sm"
+          >
+            <LogOut className="h-4 w-4 shrink-0" />
+            {!collapsed && <span>Sign Out</span>}
+          </button>
+        </div>
       </SidebarContent>
     </Sidebar>
   );
