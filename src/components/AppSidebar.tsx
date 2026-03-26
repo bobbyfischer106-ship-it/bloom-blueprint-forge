@@ -1,6 +1,7 @@
-import { LayoutDashboard, Heart, BookOpen, Calendar, Lightbulb, Trophy, Target, PenLine, Flame } from "lucide-react";
+import { LayoutDashboard, Heart, BookOpen, Calendar, Lightbulb, Trophy, Target, PenLine, Flame, LogOut } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "@/contexts/AuthContext";
 import {
   Sidebar,
   SidebarContent,
